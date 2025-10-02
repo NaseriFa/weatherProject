@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="current-information">
+      <div>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/364/original/location.png?1759396640"
+          alt="location-icon" id="location-icon" />
+          <span class="location">
+          </span>
+      </div> <!--end-of-location-->
+      <div>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/365/original/time_%281%29.png?1759397460"
+          alt="calendar-icon" id="calandar-icon" />
+          <span class="date"> </span>
+      </div> <!--end-of-date-->
+      <div >
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/362/original/time.png?1759396612"
+          alt="time-icon"id="time-icon" />
+        <span class="time">
+         
+        </span>
+      </div> <!--end-of-time-->
+    </div> <!--end-of-current-information-->
+  </header>
+
+  <main>
+    <div class="current-weather-box">
+      <div class="current-weather-temperature">
+        <span id="temperature">
+        </span>
+        <span id="unit">
+          °C
+        </span>
+        <span id="icon"></span>
+      </div> <!--end-of-current-weather-temperature-->
+      <div class="current-weather-description">
+        <p id="description">  </p>
+      </div> <!--end-of-current-weather-description-->
+      <div class="current-location">
+        <p class="location"></p>
+      </div> <!--end of location-->
+      <div class="humidity-wind">
+        <div class="humidity">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/352/original/humidity.png?1759387705"
+            alt="humidity-icon" id="humidity-icon">
+          <span id="humidity-value"></span>
+          <br>
+          <span id="humidity-key-word">Humidity</span>
+        </div>
+      
+        <div class="wind">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/353/original/wind.png?1759387986"
+            alt="wind-icon" id="wind-icon">
+          <span id="wind-speed"></span>
+          <br>
+          <span id="wind-speed-key-word">Wind Speed</span>
+        </div>
+      </div> <!-- end .humidity-wind -->
+
+    </div> <!--end-of-current-weather-box end-->
+
+  </main>  
+  <footer>
+    <div>
+      <form class="search-input-form">
+        <input type="text" placeholder="Paris" id="search-bar" required>
+        <input type="submit" value="Search" id="search-button">
+      </form>
+    </div>
+    <p>
+      Coded by <a href="">Fatima Naseri</a> , open sourced on <a href="">GitHub</a> , hosted on <a href="">Netlify</a>
+    </p>
+  </footer>
+<script src="src/index.js"></script>
+</body>
+
+</html>
