@@ -44,7 +44,6 @@ body {
 
 .weather-forecast-day:hover {
   transform: scale(1.3);
-  cursor: pointer;
 }
 
 .weather-forecast-date {
